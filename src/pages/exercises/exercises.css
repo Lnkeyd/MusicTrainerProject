@@ -1,0 +1,144 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.piano {
+    margin-top: 200px;
+    display: flex;
+}
+
+.key {
+    cursor: pointer;
+    border: none;
+}
+
+.white {
+    width: 70px;
+    height: 160px;
+    background-color: #fff;
+    margin-right: 4px;
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9),
+    3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+.white:active {
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9),
+    3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.black {
+    width: 40px;
+    height: 100px;
+    margin: 0 -20px;
+    background-color: #000;
+    z-index: 1;
+    box-shadow: -3px -3px 6px rgb(255 255 255 / 90%), 
+    1px 1px 2px rgb(0 0 0 / 70%);
+}
+
+.black:active {
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9),
+    2px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.training {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.icon {
+    width: 40px;
+}
+
+.module {
+    /* background-image: linear-gradient(to top, #cfd9df 10000%, #d1e5e9 5000%); */
+    /* background-image: linear-gradient(to top, #dfe7ec 0%, #1285A3 100000%); */
+    background-image: linear-gradient(to top, #D1E5E9 0%, #addae3 1000%);
+    padding: 14px 40px;
+    border-radius: 15px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.module:hover {
+    background: #e2e2e2;
+}
+
+.header {
+    text-align: center;
+    font-size: 40px;
+}
+
+.description {
+    min-width: 450px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.mode {
+    padding-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media screen and (max-width: 840px) {
+    .description {
+        min-width: 322px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .header {
+        font-size: 30px;
+    }
+
+    .icon {
+        width: 31px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .description {
+        min-width: 270px;
+        font-size: 14px;
+    }
+
+    .header {
+        font-size: 24px;
+    }
+
+    .icon {
+        width: 21px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .module {
+        width: 100vw;
+        border-radius: 0;
+        padding: 14px 8%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .description {
+        min-width: 0px;
+        margin: 0 auto;
+    }
+}

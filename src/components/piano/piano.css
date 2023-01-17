@@ -1,0 +1,79 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.piano {
+    margin-top: 98px;
+    display: flex;
+}
+
+.key {
+    --width: 70px;
+    cursor: pointer;
+    border: none;
+}
+
+.white {
+    width: var(--width);
+    height: calc(var(--width)* 2.285);
+    background-color: #fff;
+    margin-right: calc(var(--width) * 0.057);
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9),
+    3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+.white:active {
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9),
+    3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.black {
+    width: calc(var(--width) * 0.571);
+    height: calc(var(--width)* 1.428);
+    margin: 0 calc(var(--width) * -0.2857);
+    background-color: #000;
+    z-index: 1;
+    box-shadow: -3px -3px 6px rgb(255 255 255 / 90%), 
+    1px 1px 2px rgb(0 0 0 / 70%);
+}
+
+.black:active {
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9),
+    2px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 1300px) {
+    .key {
+        --width: 60px;
+    }
+}
+
+@media screen and (max-width: 998px) {
+    .key {
+        --width: 50px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .key {
+        --width: 40px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    
+    .piano {
+        margin-top: 12%;
+    }
+
+    .key {
+        --width: 6.5vw;
+        height: 90px;
+    }
+    .black {
+        height: 55px;
+    }
+}

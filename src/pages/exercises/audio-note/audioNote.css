@@ -1,0 +1,126 @@
+.audio-note {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.answer {
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+header {
+    color: gray;
+    margin-top: 35px;
+    font-size: 18px;
+    max-width: 70%;
+}
+
+footer {
+    max-width: 90%;
+    color: gray;
+}
+
+.audio-module {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.module-row {
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+    margin-bottom: 30px;
+}
+
+.module-item {
+    height: 60px;
+    width: 60px;
+    border: none;
+    cursor: pointer;
+}
+
+.module-item:hover {
+    background-color: #e2e2e2;
+}
+
+.ref-wrap {
+    margin-top: 40px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-ref, .play-question {
+    width: 100px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.play-ref:hover, .play-question:hover {
+    background-color: #e2e2e2;
+}
+
+@media screen and (max-width: 840px) {
+    .question {
+        font-size: 18px;
+    }
+    .checkAnswer {
+        width: 252px;
+        font-size: 15px;
+    }
+    header {
+        font-size: 14px;
+        text-align: center;
+    }
+    .module-row {
+        width: 400px;
+    }
+    .module-item {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .module-row {
+        width: 350px;
+    }
+    .module-item {
+        height: 42px;
+        width: 42px;
+    }
+    .answer {
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .question {
+        font-size: 14px;
+    }
+    .checkAnswer {
+        width: 200px;
+        height: 44px;
+        font-size: 12px;
+    }
+    .module-row {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .module-item {
+        height: 40px;
+        width: 40px;
+    }
+}
