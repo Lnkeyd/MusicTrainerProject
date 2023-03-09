@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <Router>
       <Routes>
           <Route path="*" element={<Exercises/>}/>
@@ -25,5 +25,5 @@ root.render(
           <Route path="/exercises/audio-interval" element={<AudioInterval/>}/>
       </Routes>
     </Router>
-  </React.StrictMode>
+  // {/* </React.StrictMode> */}
 );

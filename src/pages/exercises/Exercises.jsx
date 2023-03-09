@@ -1,10 +1,10 @@
 import React from 'react'
 import './exercises.css'
 
-import note from '../../img/note.svg'
-import chord from '../../img/chord.svg'
-import scale from '../../img/scale.svg'
-import interval from '../../img/interval.svg'
+import note from '../../assets/img/note.svg'
+import chord from '../../assets/img/chord.svg'
+import scale from '../../assets/img/scale.svg'
+import interval from '../../assets/img/interval.svg'
 import { Link } from 'react-router-dom'
 
 
